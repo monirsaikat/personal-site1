@@ -1,0 +1,378 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="day">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saikat | Full-stack Software Engineer</title>
+    <meta name="description" content="Saikat is a full-stack Software Engineer from Dhaka, Bangladesh. Builds Laravel, React, Electron, and realtime product systems." />
+    <meta name="keywords" content="Saikat, Full-stack Engineer, Laravel, React, Electron, Next.js, Socket.IO, MySQL, Prisma, portfolio" />
+    <meta name="author" content="Saikat" />
+    <meta name="theme-color" content="#101728" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Saikat - Full-stack Software Engineer" />
+    <meta property="og:description" content="I ship real products: Laravel + React platforms, Electron tools, and realtime systems from Dhaka." />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:image" content="assets/img/og-placeholder.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Saikat - Full-stack Software Engineer" />
+    <meta name="twitter:description" content="Product-focused software engineer building performant full-stack and realtime systems." />
+    <meta name="twitter:image" content="assets/img/og-placeholder.svg" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div id="loading-screen" class="loading-screen" aria-hidden="true">
+      <div class="nes-container is-rounded with-title loading-card">
+        <p class="title">Booting</p>
+        <p>Loading Saikat.exe portfolio...</p>
+        <progress class="nes-progress is-primary" value="65" max="100"></progress>
+      </div>
+    </div>
+
+    <div id="pixel-cursor" class="pixel-cursor" aria-hidden="true"></div>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav-wrap nes-container is-rounded" aria-label="Primary">
+        <div class="nav-left">
+          <p class="nav-brand">SAIKAT.EXE</p>
+          <button id="theme-toggle" class="nes-btn is-primary" type="button" aria-label="Toggle day or night mode" aria-pressed="false">Night Mode</button>
+        </div>
+        <ul class="nav-list" id="primary-nav">
+          <li><a href="#home" class="nav-link is-active">Home</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#quests" class="nav-link">Quests</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" class="main-content">
+      <section id="home" class="section hero-section">
+        <div class="nes-container is-rounded with-title hero-card panel-window">
+          <p class="title">Player One</p>
+          <h1>Saikat - Full-stack Software Engineer<span class="blink">_</span></h1>
+          <p class="hero-subtitle">I build full-stack products (Laravel/React/Electron) and realtime systems.</p>
+          <p>Friendly dev from Dhaka. I care about performance, practical product decisions, and shipping features that actually help people (kajer jinish).</p>
+          <div class="hero-actions">
+            <a href="#projects" class="nes-btn is-success">View Projects</a>
+            <a href="#contact" class="nes-btn is-warning">Hire Me</a>
+            <a href="assets/img/resume-placeholder.pdf" class="nes-btn is-primary" download>Download Resume</a>
+          </div>
+          <div class="mini-stats">
+            <p><i class="nes-icon coin is-small"></i> Visitor Count: <strong id="visitor-count">0</strong></p>
+            <p><i class="nes-icon star is-small"></i> Currently Building: <strong id="currently-building">TimoDesk desktop sync module</strong></p>
+          </div>
+        </div>
+
+        <aside class="nes-container is-rounded with-title status-card panel-window" aria-label="Status HUD">
+          <p class="title">Status HUD</p>
+          <ul class="status-list">
+            <li><i class="nes-icon star is-small"></i> Level: <strong>Lv. 99 Product Engineer</strong></li>
+            <li><i class="nes-icon heart is-small"></i> HP: <strong>Bug Fixing</strong></li>
+            <li><i class="nes-icon trophy is-small"></i> Mana: <strong>Coffee + Curiosity</strong></li>
+            <li><i class="nes-icon coin is-small"></i> Quest: <strong>Scaling TimoDesk</strong></li>
+          </ul>
+          <div class="xp-wrap">
+            <label for="xp-bar">Career XP</label>
+            <progress id="xp-bar" class="nes-progress is-success" value="0" max="100"></progress>
+            <small id="xp-label">0 / 100 XP</small>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" class="section">
+        <div class="nes-container is-rounded with-title panel-window">
+          <p class="title">About Me</p>
+          <p>I am Saikat, a full-stack engineer based in Dhaka, Bangladesh. I design and ship end-to-end software: backend APIs, frontend experiences, desktop clients, and database layers.</p>
+          <p>My stack is Laravel + React + Node/Express + Electron, with MySQL and Prisma for data. I prefer clean architecture, measurable performance, and maintainable product code.</p>
+          <p class="nes-balloon from-left">Short version: less hype, more shipping. Build stable features, monitor real usage, iterate fast.</p>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="nes-container is-rounded with-title panel-window">
+          <p class="title">Skills (দক্ষতা)</p>
+          <div class="skill-grid">
+            <article class="skill-group nes-container is-rounded with-title">
+              <p class="title">Frontend</p>
+              <div class="badge-list">
+                <span class="nes-badge tooltip" data-tip="Component-driven UI and hooks architecture"><span class="is-primary">React</span></span>
+                <span class="nes-badge tooltip" data-tip="SSR and app routing for modern web apps"><span class="is-success">Next.js</span></span>
+                <span class="nes-badge tooltip" data-tip="Utility-first scalable styling"><span class="is-warning">Tailwind</span></span>
+                <span class="nes-badge tooltip" data-tip="Type-safe frontend architecture"><span class="is-error">TypeScript</span></span>
+                <span class="nes-badge tooltip" data-tip="Lean global state management"><span class="is-primary">Zustand</span></span>
+                <span class="nes-badge tooltip" data-tip="Reliable async data caching"><span class="is-success">TanStack Query</span></span>
+                <span class="nes-badge tooltip" data-tip="Server-driven SPA flow"><span class="is-warning">Inertia.js</span></span>
+                <span class="nes-badge tooltip" data-tip="Rich text editing engine"><span class="is-error">Slate.js</span></span>
+              </div>
+              <ul class="meter-list">
+                <li><span>React</span><progress class="nes-progress is-primary" value="95" max="100"></progress></li>
+                <li><span>Next.js</span><progress class="nes-progress is-success" value="88" max="100"></progress></li>
+                <li><span>TypeScript</span><progress class="nes-progress is-warning" value="84" max="100"></progress></li>
+              </ul>
+            </article>
+
+            <article class="skill-group nes-container is-rounded with-title">
+              <p class="title">Backend</p>
+              <div class="badge-list">
+                <span class="nes-badge tooltip" data-tip="Production APIs and admin platforms"><span class="is-primary">Laravel</span></span>
+                <span class="nes-badge tooltip" data-tip="Runtime for scalable backend services"><span class="is-success">Node.js</span></span>
+                <span class="nes-badge tooltip" data-tip="Fast API routing and middleware"><span class="is-warning">Express</span></span>
+                <span class="nes-badge tooltip" data-tip="Core backend language"><span class="is-error">PHP</span></span>
+                <span class="nes-badge tooltip" data-tip="System and utility tools"><span class="is-primary">Java</span></span>
+                <span class="nes-badge tooltip" data-tip="Slim lightweight micro-services"><span class="is-success">Slim Framework</span></span>
+                <span class="nes-badge tooltip" data-tip="REST-first API architecture"><span class="is-warning">REST APIs</span></span>
+                <span class="nes-badge tooltip" data-tip="Realtime channels and pub/sub flow"><span class="is-error">WebSockets</span></span>
+              </div>
+              <ul class="meter-list">
+                <li><span>Laravel</span><progress class="nes-progress is-primary" value="94" max="100"></progress></li>
+                <li><span>Node/Express</span><progress class="nes-progress is-success" value="90" max="100"></progress></li>
+                <li><span>REST/API Design</span><progress class="nes-progress is-warning" value="91" max="100"></progress></li>
+              </ul>
+            </article>
+
+            <article class="skill-group nes-container is-rounded with-title">
+              <p class="title">Desktop</p>
+              <div class="badge-list">
+                <span class="nes-badge tooltip" data-tip="Cross-platform desktop software"><span class="is-primary">Electron</span></span>
+                <span class="nes-badge tooltip" data-tip="Lightweight desktop utilities"><span class="is-success">Neutralino.js</span></span>
+                <span class="nes-badge tooltip" data-tip="Python desktop prototypes"><span class="is-warning">Tkinter</span></span>
+              </div>
+              <ul class="meter-list">
+                <li><span>Electron</span><progress class="nes-progress is-primary" value="92" max="100"></progress></li>
+                <li><span>Neutralino.js</span><progress class="nes-progress is-success" value="80" max="100"></progress></li>
+              </ul>
+            </article>
+
+            <article class="skill-group nes-container is-rounded with-title">
+              <p class="title">Database</p>
+              <div class="badge-list">
+                <span class="nes-badge tooltip" data-tip="Primary relational database"><span class="is-primary">MySQL</span></span>
+                <span class="nes-badge tooltip" data-tip="Type-safe ORM layer"><span class="is-success">Prisma ORM</span></span>
+              </div>
+              <ul class="meter-list">
+                <li><span>MySQL</span><progress class="nes-progress is-primary" value="96" max="100"></progress></li>
+                <li><span>Prisma</span><progress class="nes-progress is-success" value="87" max="100"></progress></li>
+              </ul>
+            </article>
+
+            <article class="skill-group nes-container is-rounded with-title">
+              <p class="title">DevOps</p>
+              <div class="badge-list">
+                <span class="nes-badge tooltip" data-tip="Version control and team workflow"><span class="is-primary">Git</span></span>
+                <span class="nes-badge tooltip" data-tip="Server and terminal operations"><span class="is-success">Linux</span></span>
+                <span class="nes-badge tooltip" data-tip="Web server setup"><span class="is-warning">Apache</span></span>
+                <span class="nes-badge tooltip" data-tip="Ship builds and monitor stability"><span class="is-error">Deployment</span></span>
+                <span class="nes-badge tooltip" data-tip="Latency, caching, and optimization"><span class="is-primary">Performance</span></span>
+              </div>
+              <ul class="meter-list">
+                <li><span>Deployment</span><progress class="nes-progress is-primary" value="86" max="100"></progress></li>
+                <li><span>Performance Tuning</span><progress class="nes-progress is-success" value="90" max="100"></progress></li>
+              </ul>
+            </article>
+
+            <article class="skill-group nes-container is-rounded with-title">
+              <p class="title">AI / Realtime</p>
+              <div class="badge-list">
+                <span class="nes-badge tooltip" data-tip="Bidirectional realtime events"><span class="is-primary">Socket.IO</span></span>
+                <span class="nes-badge tooltip" data-tip="Realtime architecture and reliability"><span class="is-success">Realtime Systems</span></span>
+                <span class="nes-badge tooltip" data-tip="Practical AI features in products"><span class="is-warning">AI Integration</span></span>
+                <span class="nes-badge tooltip" data-tip="Local LLM workflows"><span class="is-error">Ollama</span></span>
+              </div>
+              <ul class="meter-list">
+                <li><span>Socket.IO</span><progress class="nes-progress is-primary" value="93" max="100"></progress></li>
+                <li><span>AI Integration</span><progress class="nes-progress is-success" value="82" max="100"></progress></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="nes-container is-rounded with-title panel-window">
+          <p class="title">Projects (প্রজেক্ট)</p>
+          <div class="project-grid">
+            <article class="project-card nes-container is-rounded with-title"><p class="title">TimoDesk</p><p>Hubstaff-like time tracking with screenshots and activity monitoring.</p><p class="stack-line"><strong>Stack:</strong> Laravel, Electron, MySQL</p><p class="impact"><strong>Impact:</strong> Improved accountability and accurate payroll logs.</p><button class="nes-btn is-primary project-btn" type="button" data-project="timodesk">View Details</button></article>
+            <article class="project-card nes-container is-rounded with-title"><p class="title">Tailwind Web Builder</p><p>In-browser block editor with direct text editing and UI controls.</p><p class="stack-line"><strong>Stack:</strong> React, Tailwind, Zustand</p><p class="impact"><strong>Impact:</strong> Faster no-code page creation and design consistency.</p><button class="nes-btn is-primary project-btn" type="button" data-project="webbuilder">View Details</button></article>
+            <article class="project-card nes-container is-rounded with-title"><p class="title">Realtime Chat</p><p>Auth-based room chat with persistent history and realtime sync.</p><p class="stack-line"><strong>Stack:</strong> Next.js, Socket.IO, TanStack Query</p><p class="impact"><strong>Impact:</strong> Smooth multi-room communication flow.</p><button class="nes-btn is-primary project-btn" type="button" data-project="chat">View Details</button></article>
+            <article class="project-card nes-container is-rounded with-title"><p class="title">Textile Management System</p><p>Garment production tracking across orders, inventory, and delivery.</p><p class="stack-line"><strong>Stack:</strong> Laravel, MySQL, Tailwind</p><p class="impact"><strong>Impact:</strong> Reduced manual reporting and delayed order updates.</p><button class="nes-btn is-primary project-btn" type="button" data-project="textile">View Details</button></article>
+            <article class="project-card nes-container is-rounded with-title"><p class="title">Ruhani Software Platform</p><p>Company platform for services, project showcase, and lead pipeline.</p><p class="stack-line"><strong>Stack:</strong> Laravel, React</p><p class="impact"><strong>Impact:</strong> Better service discovery and client conversion.</p><button class="nes-btn is-primary project-btn" type="button" data-project="ruhani">View Details</button></article>
+            <article class="project-card nes-container is-rounded with-title"><p class="title">Ollama AI Employee Interface</p><p>Custom internal AI assistant for team operations and quick lookup.</p><p class="stack-line"><strong>Stack:</strong> Node.js, Ollama, React</p><p class="impact"><strong>Impact:</strong> Faster internal support and document retrieval.</p><button class="nes-btn is-primary project-btn" type="button" data-project="ollama">View Details</button></article>
+            <article class="project-card nes-container is-rounded with-title"><p class="title">Expense Management System</p><p>Expense submission workflow with image uploads and approval states.</p><p class="stack-line"><strong>Stack:</strong> Laravel, MySQL, JavaScript</p><p class="impact"><strong>Impact:</strong> Clear audit trail and faster reimbursements.</p><button class="nes-btn is-primary project-btn" type="button" data-project="expense">View Details</button></article>
+            <article class="project-card nes-container is-rounded with-title"><p class="title">WordPress Login Customizer</p><p>Plugin for custom authentication UI and security validation flow.</p><p class="stack-line"><strong>Stack:</strong> PHP, WordPress</p><p class="impact"><strong>Impact:</strong> Better branding and reduced login abuse attempts.</p><button class="nes-btn is-primary project-btn" type="button" data-project="wordpress">View Details</button></article>
+            <article class="project-card nes-container is-rounded with-title"><p class="title">Desktop Productivity Tools</p><p>Utility suite with Neutralino apps and small productivity helpers.</p><p class="stack-line"><strong>Stack:</strong> Neutralino.js, JavaScript</p><p class="impact"><strong>Impact:</strong> Lightweight desktop workflows for operations teams.</p><button class="nes-btn is-primary project-btn" type="button" data-project="desktoptools">View Details</button></article>
+            <article class="project-card nes-container is-rounded with-title"><p class="title">Time Tracking Desktop App</p><p>Standalone timer app with local tracking and activity snapshots.</p><p class="stack-line"><strong>Stack:</strong> Electron, Tkinter (prototype)</p><p class="impact"><strong>Impact:</strong> Better personal/team time discipline.</p><button class="nes-btn is-primary project-btn" type="button" data-project="timeapp">View Details</button></article>
+            <article class="project-card nes-container is-rounded with-title"><p class="title">Laravel + React Starter Kit</p><p>Reusable starter with auth, roles, and common app foundations.</p><p class="stack-line"><strong>Stack:</strong> Laravel, React, MySQL</p><p class="impact"><strong>Impact:</strong> Faster kickoff for internal and client projects.</p><button class="nes-btn is-primary project-btn" type="button" data-project="starterkit">View Details</button></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="quests" class="section">
+        <div class="nes-container is-rounded with-title panel-window">
+          <p class="title">Experience / Quests</p>
+          <div class="quest-grid">
+            <article class="nes-container is-rounded with-title quest-panel">
+              <p class="title">Timeline</p>
+              <ol class="timeline-list">
+                <li><strong>Level 70:</strong> Built Ruhani as software solutions brand.</li>
+                <li><strong>Level 82:</strong> Delivered Textile Management System.</li>
+                <li><strong>Level 90:</strong> Built Tailwind Web Builder engine.</li>
+                <li><strong>Level 99:</strong> Scaling TimoDesk and realtime products.</li>
+              </ol>
+            </article>
+            <article class="nes-container is-rounded with-title quest-panel">
+              <p class="title">Active Missions</p>
+              <ul class="quest-list">
+                <li><i class="nes-icon star is-small"></i> Improve screenshot ingestion reliability</li>
+                <li><i class="nes-icon star is-small"></i> Launch reusable Laravel/React starter templates</li>
+                <li><i class="nes-icon star is-small"></i> Expand AI tools for employee productivity</li>
+              </ul>
+            </article>
+            <article class="nes-container is-rounded with-title quest-panel">
+              <p class="title">Achievements</p>
+              <div class="achievements-grid" id="achievements-grid">
+                <span class="nes-badge"><span class="is-success">100+ Features Shipped</span></span>
+                <span class="nes-badge"><span class="is-primary">Realtime Specialist</span></span>
+                <span class="nes-badge"><span class="is-warning">Desktop App Crafter</span></span>
+                <span class="nes-badge"><span class="is-error">MySQL Guardian</span></span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="section">
+        <div class="nes-container is-rounded with-title panel-window">
+          <p class="title">Services</p>
+          <div class="services-grid">
+            <article class="nes-container is-rounded with-title"><p class="title">Full-stack Product Build</p><p>From idea to shipped app using Laravel, React, and MySQL foundations.</p></article>
+            <article class="nes-container is-rounded with-title"><p class="title">Realtime Systems</p><p>Socket.IO-powered features like chat, live updates, tracking dashboards.</p></article>
+            <article class="nes-container is-rounded with-title"><p class="title">Desktop Apps</p><p>Electron and lightweight desktop utilities for operational workflows.</p></article>
+            <article class="nes-container is-rounded with-title"><p class="title">Performance Tuning</p><p>Query optimization, payload trimming, and practical speed improvements.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="tech-visual" class="section">
+        <div class="nes-container is-rounded with-title panel-window">
+          <p class="title">Tech Stack Visualization</p>
+          <div class="stack-map">
+            <div class="stack-node is-primary">Frontend<br />React + Next + Tailwind</div>
+            <div class="stack-node is-success">Backend<br />Laravel + Node</div>
+            <div class="stack-node is-warning">Data<br />MySQL + Prisma</div>
+            <div class="stack-node is-error">Realtime<br />Socket.IO + Events</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section">
+        <div class="nes-container is-rounded with-title panel-window">
+          <p class="title">Testimonials</p>
+          <div class="testimonials-grid">
+            <figure class="nes-container is-rounded is-dark"><blockquote>"Saikat delivered faster than expected and kept quality high with clear communication."</blockquote><figcaption>- Product Lead, SaaS Team</figcaption></figure>
+            <figure class="nes-container is-rounded is-dark"><blockquote>"Strong backend judgment, clean React structure, and great ownership mindset."</blockquote><figcaption>- Startup Founder</figcaption></figure>
+            <figure class="nes-container is-rounded is-dark"><blockquote>"Realtime features were stable under load and easy to maintain after launch."</blockquote><figcaption>- Engineering Manager</figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="panels" class="section">
+        <div class="dual-panel-grid">
+          <article class="nes-container is-rounded with-title panel-window">
+            <p class="title">GitHub Activity Panel</p>
+            <ul class="panel-list">
+              <li><span class="dot dot-green"></span> Built realtime chat room reconnect logic</li>
+              <li><span class="dot dot-blue"></span> Refined MySQL indexes on reporting module</li>
+              <li><span class="dot dot-yellow"></span> Polished Electron tray and start-on-boot flow</li>
+              <li><span class="dot dot-red"></span> Documented Laravel starter architecture</li>
+            </ul>
+            <p class="muted-line">Live API not connected in this static build.</p>
+          </article>
+          <article class="nes-container is-rounded with-title panel-window">
+            <p class="title">Tech Radar / Tools I Use</p>
+            <ul class="panel-list">
+              <li><strong>Adopt:</strong> Laravel, React, MySQL, Socket.IO</li>
+              <li><strong>Trial:</strong> Ollama internal workflows, advanced caching patterns</li>
+              <li><strong>Assess:</strong> Neutralino utilities for lightweight desktop apps</li>
+              <li><strong>Hold:</strong> Over-engineered abstractions without product need</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="learning" class="section">
+        <div class="nes-container is-rounded with-title panel-window">
+          <p class="title">Currently Learning</p>
+          <div class="learning-grid">
+            <article class="nes-container is-rounded"><h3>Advanced Query Optimization</h3><progress class="nes-progress is-success" value="70" max="100"></progress></article>
+            <article class="nes-container is-rounded"><h3>AI Agent UX for Teams</h3><progress class="nes-progress is-primary" value="64" max="100"></progress></article>
+            <article class="nes-container is-rounded"><h3>Distributed Realtime Patterns</h3><progress class="nes-progress is-warning" value="58" max="100"></progress></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="section">
+        <div class="nes-container is-rounded with-title panel-window">
+          <p class="title">Blog / Notes</p>
+          <div class="blog-grid">
+            <article class="nes-container is-rounded"><h3>Post Coming Soon</h3><p>How I build realtime features without making UX messy.</p></article>
+            <article class="nes-container is-rounded"><h3>Post Coming Soon</h3><p>My practical Laravel + React architecture for SaaS products.</p></article>
+            <article class="nes-container is-rounded"><h3>Post Coming Soon</h3><p>Lessons from desktop time-tracking tools and monitoring flow.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="terminal" class="section">
+        <div class="nes-container is-rounded with-title panel-window">
+          <p class="title">Dev Terminal</p>
+          <p>Type commands: <code>help</code>, <code>skills</code>, <code>projects</code>, <code>status</code>, <code>clear</code></p>
+          <div class="terminal-shell" aria-live="polite">
+            <div id="terminal-output" class="terminal-output">&gt; System online. Ready for commands.</div>
+            <form id="terminal-form" class="terminal-form" autocomplete="off">
+              <label for="terminal-input" class="sr-only">Terminal command</label>
+              <span class="prompt">$</span>
+              <input id="terminal-input" class="nes-input" type="text" placeholder="Enter command" />
+              <button class="nes-btn is-primary" type="submit">Run</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="nes-container is-rounded with-title panel-window">
+          <p class="title">Contact (যোগাযোগ)</p>
+          <p>If you are building something serious, I am open to collaborating.</p>
+          <form id="contact-form" novalidate>
+            <div class="form-grid">
+              <div class="nes-field"><label for="name">Name</label><input type="text" id="name" name="name" class="nes-input" required /><small class="error-text" id="name-error" aria-live="polite"></small></div>
+              <div class="nes-field"><label for="email">Email</label><input type="email" id="email" name="email" class="nes-input" required /><small class="error-text" id="email-error" aria-live="polite"></small></div>
+            </div>
+            <div class="nes-field"><label for="message">Message</label><textarea id="message" name="message" class="nes-textarea" rows="6" minlength="10" required></textarea><small class="error-text" id="message-error" aria-live="polite"></small></div>
+            <button type="submit" class="nes-btn is-success">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer nes-container is-rounded">
+      <p>Made by Saikat in Dhaka. Built with NES.css + vanilla JS.</p>
+    </footer>
+
+    <dialog class="nes-dialog" id="project-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+      <form method="dialog">
+        <p class="title" id="dialog-title">Project Details</p>
+        <div id="dialog-description"></div>
+        <menu class="dialog-actions">
+          <button class="nes-btn" value="cancel" id="dialog-close">Close</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

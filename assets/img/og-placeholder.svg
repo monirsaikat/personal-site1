@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#111217"/>
+  <rect x="80" y="80" width="1040" height="470" fill="#1b1e26" stroke="#f7f7f7" stroke-width="8"/>
+  <text x="120" y="260" font-family="monospace" font-size="62" fill="#92cc41">Saikat - Software Engineer</text>
+  <text x="120" y="340" font-family="monospace" font-size="32" fill="#f7f7f7">Laravel | React | Electron | Realtime Systems</text>
+</svg>
