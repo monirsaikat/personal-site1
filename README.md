@@ -31,3 +31,4 @@ Open `index.html` directly in your browser.
 - Replace `assets/img/resume-placeholder.pdf` with your real resume.
 - Replace `og:url` and OG image if deploying publicly.
 - GitHub activity is static placeholder content in this build.
+# personal-site1
